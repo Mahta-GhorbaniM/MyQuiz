@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -14,11 +14,18 @@
         <button onclick="startQuiz('math')">Mathematics</button>
         <button onclick="startQuiz('geo')">Geography</button>
     </section>
+    <section id="question-count" style="display: none;">
+        <p>Välj antal frågor:</p>
+        <button onclick="setQuestionCount(5)">5 frågor</button>
+        <button onclick="setQuestionCount(10)">10 frågor</button>
+        <button onclick="setQuestionCount(15)">15 frågor</button>
+    </section>
 
 
     <section id="quiz-screen" style="display: none;">
         <h2 id="question-text"></h2>
         <div id="answer-options"></div>
+        <div id="timer">Tid kvar: <span id="time-left">10</span></div>
         <button id="next-question" style="display: none;" onclick="nextQuestion()">Nästa fråga</button>
     </section>
 
@@ -30,6 +37,7 @@
         <button onclick="goToStart()">Till startsidan</button>
     </section>
 
-    <script src="script.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

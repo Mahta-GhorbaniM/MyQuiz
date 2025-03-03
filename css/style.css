@@ -56,9 +56,14 @@ button:active {
 }
 
 #next-question {
-    background: #28a745;
+    background: blue;
     color: white;
     font-weight: bold;
+}
+
+#next-question:hover {
+    background: #011429;
+    color: rgb(252, 222, 227);
 }
 
 #result-text {
